@@ -34,8 +34,14 @@ namespace Project7 {
 				delete components;
 			}
 		}
+<<<<<<< HEAD
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label1;
+=======
+	private: System::Windows::Forms::Button^ button1;
+	protected:
+
+>>>>>>> yy
 	protected:
 
 	private:
@@ -51,6 +57,7 @@ namespace Project7 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+<<<<<<< HEAD
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
@@ -71,22 +78,60 @@ namespace Project7 {
 			this->label1->Size = System::Drawing::Size(46, 17);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"label1";
+=======
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(113, 78);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+>>>>>>> yy
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(282, 253);
+<<<<<<< HEAD
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->ResumeLayout(false);
 			this->PerformLayout();
+=======
+			this->Controls->Add(this->button1);
+			this->Name = L"MyForm";
+			this->Text = L"MyForm";
+			this->ResumeLayout(false);
+>>>>>>> yy
 
 		}
 #pragma endregion
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void InitializeComponent() {
+		this->SuspendLayout();
+		// 
+		// MyForm
+		// 
+		this->ClientSize = System::Drawing::Size(433, 344);
+		this->Name = L"MyForm";
+		this->ResumeLayout(false);
+	}
+private: System::Void InitializeComponent() {
+	this->SuspendLayout();
+	// 
+	// MyForm
+	// 
+	this->ClientSize = System::Drawing::Size(631, 546);
+	this->Name = L"MyForm";
+	this->ResumeLayout(false);
+}
+};
 }
