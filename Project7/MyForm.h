@@ -34,6 +34,8 @@ namespace Project7 {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::TextBox^ textBox1;
+	protected:
 
 	private:
 		/// <summary>
@@ -48,11 +50,27 @@ namespace Project7 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"MyForm";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->SuspendLayout();
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(25, 94);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(225, 22);
+			this->textBox1->TabIndex = 0;
+			// 
+			// MyForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(282, 253);
+			this->Controls->Add(this->textBox1);
+			this->Name = L"MyForm";
+			this->Text = L"MyForm";
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
 	};
